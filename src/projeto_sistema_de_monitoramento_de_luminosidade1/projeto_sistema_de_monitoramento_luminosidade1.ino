@@ -25,6 +25,8 @@ int NUM_LEITURAS = 10;
 unsigned long tempoInicioBuzzer = 0;
 bool buzzerTocando = false;
 bool jaTocouNoAmarelo = false;
+// Guarda o momento em que o último alerta começou.
+unsigned long tempoUltimoAlerta = 0;
 
 // FRAME 01 - Animação: Introdução da folha (Cena inicial de tamanho intermédio)
 byte frame01_0[8] = {
@@ -1475,15 +1477,20 @@ void loop() {
         lcd.setCursor(8, 1);
         lcd.print("Alerta  ");
 
-        // Ativa o alarme por apenas 3 segundos
-        // sem travar a leitura
-      	// millis() permite medir o tempo decorrido sem usar uma pausa longa,
-		// mantendo o ciclo de monitoramento em execução.
-        if (!buzzerTocando &&!jaTocouNoAmarelo) {
-            tone(buzzer,1000);
+        // Aciona o buzzer novamente enquanto o ambiente
+        // permanecer na faixa de alerta.
+        // O sinal toca por 3 segundos e aguarda 2 segundos
+        // antes de iniciar um novo ciclo.
+
+        if (!buzzerTocando &&
+            millis() - tempoUltimoAlerta >= 5000) {
+
+            tone(buzzer, 1000);
+
             tempoInicioBuzzer = millis();
+            tempoUltimoAlerta = millis();
+
             buzzerTocando = true;
-            jaTocouNoAmarelo = true;
         }
     }
 
