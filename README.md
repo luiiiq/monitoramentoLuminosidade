@@ -14,6 +14,7 @@ O sistema utiliza a plataforma Arduino (baseada no microcontrolador **ATmega328P
   - 🟡 **LED Amarelo:** Nível de Alerta (luminosidade média atingida).
   - 🔴 **LED Vermelho:** Problema Detectado (luminosidade alta: ERROR!).
 - **Alarme Sonoro (Buzzer):** Ativado por **3 segundos** assim que o nível de alerta (LED Amarelo) é atingido, voltando a soar caso a luminosidade permaneça instável ou inadequada.
+- **Alarme Sonoro (Buzzer - ERROR):** Ativado quando a luminosidade atinge o nível crítico (LED vermelho), emitindo alertas sonoros em intervalos menores e repetidamente enquanto o ambiente permanecer nesse estado.
 
 ## Componentes Utilizados (Hardware)
 
