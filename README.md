@@ -19,7 +19,7 @@ O sistema utiliza a plataforma Arduino (baseada no microcontrolador **ATmega328P
 ## Componentes Utilizados (Hardware)
 
 * 1x Microcontrolador ATmega328P (Placa Arduino Uno R3)
-* 1x Display LCD 16x2 (com ou sem módulo I2C)
+* 1x Display LCD 16x2 (com I2C)
 * 1x Sensor de Luz LDR (Resistor Dependente de Luz)
 * 1x Buzzer Piezoelétrico
 * 1x LED Verde
