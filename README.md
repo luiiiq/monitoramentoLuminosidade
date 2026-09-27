@@ -64,7 +64,7 @@ Caso queira testar a lógica antes de montar o circuito físico:
 
 Para visualizar a apresentação e o funcionamento do projeto, acesse o vídeo pelo link abaixo:
 
-[▶️ Acessar o vídeo do trabalho](https://youtu.be/xalAVg7U42U)
+[Acessar o vídeo do trabalho](https://youtu.be/xalAVg7U42U)
 
 ## Integrantes do Grupo CALM  TECH:
 * **Nome do Aluno 1** - Caio Fernando De Deus Gomes
