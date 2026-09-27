@@ -60,6 +60,12 @@ Caso queira testar a lógica antes de montar o circuito físico:
 4. Selecione a Placa (`Arduino Uno`) e a Porta COM correta nas configurações da IDE.
 5. Clique em **Carregar (Upload)** para gravar o código no microcontrolador.
 
+### 3. Vídeo do Projeto
+
+Para visualizar a apresentação e o funcionamento do projeto, acesse o vídeo pelo link abaixo:
+
+[▶️ Acessar o vídeo do trabalho](https://youtu.be/xalAVg7U42U)
+
 ## Integrantes do Grupo CALM  TECH:
 * **Nome do Aluno 1** - Caio Fernando De Deus Gomes
 * **Nome do Aluno 2** - Amanda Souza de Barros
