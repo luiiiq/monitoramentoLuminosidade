@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinheria Agnello</title>
+    <link rel="stylesheet" href="./src/assets/css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="./src/assets/img/logo.svg" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./index.html">PAINEL</a></li>
+                <li><a href="./src/assets/pages/colaboradores.html">COLABORADORES</a></li>
+                <li><a href="./src/assets/pages/equipamentos.html">EQUIPAMENTOS</a></li>
+            </ul>
+        </nav>
+        <div>
+            <img src="./src/assets/img/detalhe.svg" alt="Detalhe Header">
+        </div>
+    </header>
+    <button id="conectar">CONECTAR</button>
+    <main class="container">
+        <section>
+            <div class="painelPrincipal">
+                <div class="painelIntro">
+                    <div><img id="verde" src="./src/assets/img/lampadaVerde.svg" alt=""></div>
+                    <div><img id="vermelho" src="./src/assets/img/lampadaVermelho.svg" alt=""></div>
+                    <div><img id="amarelo" src="./src/assets/img/lampada.svg" alt=""></div>
+                    <div>
+                        <p>Luminosidade</p>
+                        <h2><span class="porcentagem">0</span>%</h2>
+                    </div>
+                </div>
+                <div class="progressoContainer">
+                    <div class="progresso"></div>
+                    <div class="progressoDescricao">
+                        <p>OK</p>
+                        <p>Alerta</p>
+                        <p>ERROR!</p>
+                    </div>
+                </div>
+                <div class="status">Status: <span></span></div>
+            </div>
+        </section>
+        <section class="painelLateral">
+            <div class="leds">
+                <h3>Led Conectado</h3>
+                <img id="verde" src="./src/assets/img/led-verde.png" alt="Led Verde">
+                <img id="vermelho" src="./src/assets/img/led-vermelho.png" alt="Led vermelho">
+                <img id="amarelo" src="./src/assets/img/led-amarelo.png" alt="Led amarelo">
+                <span class="corLed"></span>
+            </div>
+            <div>
+                <div>
+                    <h3>Recomendação para armazenamento do vinho</h3>
+                    <ul>
+                        <li>Permaneça no estado OK - Led Verde!</li>
+                        <li>Acompanhe o monitoramento</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="detalheFooter">
+            <img src="./src/assets/img/detalhe.svg" alt="Detalhe Footer">
+        </div>
+        <p>Todos os direitos reservados</p>
+        <h4>CALM TECH Team ©</h4>
+    </footer>
+    <script src="./src/assets/js/script.js"></script>
+</body>
+</html>
