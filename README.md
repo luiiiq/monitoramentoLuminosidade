@@ -35,12 +35,13 @@ O sistema utiliza a plataforma Arduino (baseada no microcontrolador **ATmega328P
 ## Linguagem Utilizada
 <img
   align="left" 
-  alt="CSS" 
-  title="CSS"
+  alt="c++" 
+  title="c++"
   width="30px" 
   style="padding-right: 10px;" 
   src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" 
-/><br>
+/>
+<br>
 
 ## Como Usar e Executar o Projeto
 
@@ -59,6 +60,18 @@ Caso queira testar a lógica antes de montar o circuito físico:
 3. Instale as dependências de display necessárias através do Gerenciador de Bibliotecas.
 4. Selecione a Placa (`Arduino Uno`) e a Porta COM correta nas configurações da IDE.
 5. Clique em **Carregar (Upload)** para gravar o código no microcontrolador.
+
+### 3. Vídeo do Projeto 1.0
+
+Para visualizar a apresentação e o funcionamento do projeto, acesse o vídeo pelo link abaixo:
+
+[Acessar o vídeo do trabalho](https://youtu.be/xalAVg7U42U)
+
+### 4. Vídeo do Projeto 2.0
+
+Mesma ideia do Projeto 1.0. Porém, com interface no Display e na tela do computador, usando a metodologia do Digital Twin.
+
+[Acessar o vídeo do trabalho 2.0](https://youtu.be/BvonR4OcRyg)
 
 ## Integrantes do Grupo CALM  TECH:
 * **Nome do Aluno 1** - Caio Fernando De Deus Gomes
