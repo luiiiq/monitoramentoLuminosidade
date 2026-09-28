@@ -31,6 +31,25 @@ O sistema utiliza a plataforma Arduino (baseada no microcontrolador **ATmega328P
 ## Dependências e Bibliotecas (Software)
 * **LiquidCrystal_I2C** (Biblioteca responsável pelo controle do display LCD por meio da comunicação I2C.)
 * **Wire** (Biblioteca utilizada para a comunicação I2C entre o Arduino e o display LCD.)
+*  **Configuração do Ambiente (PlatformIO)**
+  Este projeto utiliza o **PlatformIO** no VS Code para o desenvolvimento do firmware do Arduino. Para que o código compile corretamente sem erros de importação, preste atenção aos seguintes pontos:
+  O PlatformIO é muito rígido com a organização dos arquivos. O arquivo principal de código **`main.cpp`** deve ficar solto obrigatoriamente dentro da pasta raiz **`src/`**, e **NÃO** dentro de subpastas (como `src/arduino/main.cpp`).
+Se o seu arquivo estiver no lugar errado, basta arrastá-lo diretamente para a raiz da pasta `src/` pelo explorador do VS Code.
+  Se o VS Code exibir uma linha vermelha de erro embaixo do `#include <LiquidCrystal_I2C.h>`, siga estes passos para resolver:
+  1. Abra o arquivo **`platformio.ini`** na raiz do projeto.
+  2. Adicione a dependência **`lib_deps`** logo abaixo das configurações da sua placa:
+```ini
+[env:uno]
+platform = atmelavr
+board = uno
+framework = arduino
+lib_deps = marcoschwartz/LiquidCrystal_I2C @ ^1.1.4
+```
+  3. Salve o arquivo (`Ctrl + S`) para que o PlatformIO baixe os arquivos automaticamente.
+  4. Se a linha vermelha continuar aparecendo, force a atualização do VS Code:
+   * Pressione **`Ctrl + Shift + P`**
+   * Digite: `PlatformIO: Rebuild IntelliSense Index`
+   * Pressione **`Enter`**
 
 ## Linguagem Utilizada
 <img
